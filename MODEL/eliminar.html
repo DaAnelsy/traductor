@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar al diccionario </title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../VIEW/style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="../IMAGES/logo.png"></h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.php" >Home</a></li>
+                    <li><a href="../MODEL/diccionario.php" >Diccionario</a></li>
+                    <li><a href="../MODEL/login.html" >NuevasPalabras</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <a href="../CONTROLLER/logout.php" class="cerrarlog">Cerrar sesion</a>
+    
+    <h2 class="tituloPrincipal">Eliminar una Palabra k'iche trD </h2>
+    
+    <section class="principal">
+        
+        <form action="../CONTROLLER/eliminar.php" method="post" autocomplete="off">  
+            <h2>Bienvenido</h2>
+            <div class="input-group">
+                <div class="input-container">
+                    <label>idTraductor</label>
+                    <input type="text" name="idTraductor" placeholder="ID de la palabra que eliminara" > <br>
+                </div>
+                
+                <input type="submit" name="eliminar"  class="btn" value="Eliminar"> 
+                <br><br>
+                <a href="../MODEL/registrosPalabras.php" class="ret" >Regresar</a>
+        </form>
+    
+    </section>
+    <footer>
+        <img src="../IMAGES/logo.png">
+        <p class="copyright">&copy Copyright K'iche trD - 2023</p>
+    </footer>
+</body>
+</html>

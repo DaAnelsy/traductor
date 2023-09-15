@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro usuario</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../VIEW/style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="../IMAGES/logo.png"></h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.php" >Home</a></li>
+                    <li><a href="../MODEL/diccionario.php" >Diccionario</a></li>
+                    <li><a href="../MODEL/login.html" >NuevasPalabras</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="principal" >
+
+        <form action="../CONTROLLER/registrarUsuario.php" method="post" autocomplete="off">
+            <h2>Bienvenido</h2>
+            <div class="input-group">
+ 
+            <div class="input-container">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre de usuario">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-container">
+                <input type="tel" name="telefono" id="telefono" placeholder="Telefono">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="input-container">
+                <input type="email" name="correo" id="correo" placeholder="Correo">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-container">
+                <input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="input-container">
+                <input type="password" name="ccontrasenia" id="ccontrasenia" placeholder="Contraseña">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="form-group">
+            <div class="g-recaptcha" data-sitekey="6Le7OJgnAAAAAPuodVPNZNUR9mV7WK71JMsJpZwE"></div>
+            </div>
+            <a href="#">Terminos y Condiciones </a>
+            <div  >
+            <p class="cuenta">tengo cuenta<a  href="../MODEL/login.html " class="lo">Iniciar sesion </a></p>
+            </div>
+            
+            <input type="submit" name="registro" class="btn" value="Registrarse">
+             <a href="../MODEL/registrosPalabras.php" class="ret" >Regresar</a>
+
+            </div>
+        </form>
+        <script src="https://stackpath.bootstrapodn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+    </section>
+     
+    <footer>
+        <img src="../IMAGES/logo.png">
+        <p class="copyright">&copy Copyright K'iche trD - 2023</p>
+    </footer>
+</body>
+</html>
